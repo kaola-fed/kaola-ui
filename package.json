@@ -1,0 +1,19 @@
+{
+  "name": "kaola-ui",
+  "private": true,
+  "scripts": {
+    "lint": "eslint packages",
+    "precommit": "lint-staged",
+    "boot": "lerna bootstrap"
+  },
+  "lint-staged": {
+    "packages/**/*.js": "eslint --quiet"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "husky": "^0.13.3",
+    "lerna": "^2.5.1",
+    "lint-staged": "^4.0.2"
+  },
+  "license": "MIT"
+}

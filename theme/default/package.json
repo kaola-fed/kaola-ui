@@ -1,0 +1,13 @@
+{
+  "name": "@kaola-ui/theme",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/theme.css",
+  "style": "dist/theme.css",
+  "scripts": {
+    "test": "echo 🚧"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

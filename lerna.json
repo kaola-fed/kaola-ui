@@ -1,0 +1,9 @@
+{
+  "lerna": "2.5.1",
+  "packages": [
+    "components/*",
+    "theme/*"
+  ],
+  "version": "independent",
+  "npmClient": "cnpm"
+}
