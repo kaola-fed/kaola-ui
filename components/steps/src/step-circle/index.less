@@ -1,0 +1,26 @@
+@disable-color: #dedede;
+
+.ko-step-circle {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: solid 1px @primary-color;
+	background-color: @primary-color;
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+	font-size: 12px;
+
+	&.is-outline {
+		border: solid 1px @primary-color;
+		background-color: #fff;
+		color: @primary-color;
+	}
+
+	&.is-disabled {
+		border: solid 1px @disable-color;
+		background-color: #fff;
+		color: @disable-color;
+	}
+}

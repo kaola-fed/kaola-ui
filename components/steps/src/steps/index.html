@@ -1,0 +1,44 @@
+<div class="ko-steps">
+	{#list _steps as step}
+		<div class="ko-steps__item">
+			{#if step_index > 0}
+				<div class="ko-steps__item-line is-left { step.data.lineStatus[ 0 ] ? 'is-active' : '' }"></div>
+			{/if}
+
+			{#if step_index < _steps.length - 1}
+				<div class="ko-steps__item-line is-right { step.data.lineStatus[ 1 ] ? 'is-active' : '' } { step.data.isTransitionHolder ? 'is-holder' : '' }"></div>
+			{/if}
+
+			{#if step.data.isTransitionHolder}
+			<div class="ko-steps__item-transition-text">{ transitionText }</div>
+			{/if}
+
+			<div class="ko-steps__item-icon">
+				{#if step.data.status === 'done'}
+					{! 完成状态的节点处于最后时是实心的，其他都是空心的 !}
+					{#if step_index < _steps.length - 1}
+					<StepCircle icon="right-tmp" outline></StepCircle>
+					{#else}
+					<StepCircle icon="right-tmp"></StepCircle>
+					{/if}
+				{#elseif step.data.status === 'process'}
+					<StepCircle>{ step_index + 1 }</StepCircle>
+				{#elseif step.data.status === 'error'}
+					<StepCircle icon="error-tmp"></StepCircle>
+				{#elseif step.data.status === 'pending'}
+					<StepCircle disabled>{ step_index + 1 }</StepCircle>
+				{/if}
+			</div>
+			<div class="ko-steps__item-content is-{ step.data.status }">
+				<div class="ko-steps__item-title">
+					{ step.data.title }
+				</div>
+				<div class="ko-steps__item-desc">
+					{ step.data.description || step.data.desc }
+				</div>
+			</div>
+		</div>
+	{/list}
+
+	{#inc this.$body}
+</div>

@@ -1,0 +1,10 @@
+<div class="ko-segmented-control">
+	{#list values as value}
+		<div
+			class="ko-segmented-control__item { selectedIndex === value_index ? 'is-selected' : '' }"
+			on-click="{ this.onSelect( value_index ) }"
+		>
+			{ value }
+		</div>
+	{/list}
+</div>

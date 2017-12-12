@@ -1,0 +1,11 @@
+{
+  "name": "@kaola-ui/steps",
+  "version": "0.0.0",
+  "description": "",
+  "play:main": "src/index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

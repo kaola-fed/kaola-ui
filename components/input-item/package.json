@@ -1,0 +1,31 @@
+{
+  "name": "@kaola-ui/input-item",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dist": "bili --format=all --filename=index",
+    "lint": "eslint src",
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watchAll",
+    "coverage": "jest --no-cache --coverage",
+    "prepublish": "echo 😋",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint --quiet"
+  },
+  "eslintConfig": {
+    "extends": "mo/esnext"
+  },
+  "author": "fengzilong1992@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "babel-jest": "^20.0.3",
+    "husky": "^0.13.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "bili": "^0.17.4",
+    "eslint-config-mo": "latest"
+  }
+}

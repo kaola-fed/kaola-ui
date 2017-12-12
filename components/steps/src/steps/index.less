@@ -1,0 +1,92 @@
+@pending-color: #b2b2b2;
+@error-color: #e31436;
+@process-color: #e31436;
+@done-color: #333;
+@pending-border-color: #e6e6e6;
+
+.ko-steps {
+	display: flex;
+
+	&__item {
+		flex: 1;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	&__item-line {
+		border-top: dashed 1px @pending-border-color;
+		position: absolute;
+		width: 50%;
+		z-index: -1;
+		top: 8px;
+
+		&.is-active {
+			border-color: @primary-color;
+		}
+
+		&.is-left {
+			margin-left: 2px;
+		}
+
+		&.is-right {
+			margin-left: 50%;
+		}
+
+		&.is-holder::after {
+			position: absolute;
+			top: -3px;
+			right: 0;
+			display: block;
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: @primary-color;
+		}
+	}
+
+	&__item-transition-text {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 11px;
+		color: @primary-color;
+		transform: translate3d(50%,-15px,0);
+	}
+
+	&__item-icon {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item-content {
+		font-size: 12px;
+		margin-top: 7px;
+
+		&.is-pending {
+			color: @pending-color;
+		}
+
+		&.is-error {
+			color: @error-color;
+		}
+
+		&.is-process {
+			color: @process-color;
+		}
+
+		&.is-done {
+			color: @done-color;
+		}
+	}
+
+	&__item-title {
+
+	}
+
+	&__item-desc {
+
+	}
+}

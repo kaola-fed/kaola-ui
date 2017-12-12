@@ -1,0 +1,23 @@
+.ko-segmented-control {
+	box-sizing: border-box;
+	line-height: 36px;
+	height: 38px;
+	display: flex;
+	border: solid 1px #333;
+	border-radius: 5px;
+	overflow: hidden;
+
+	&__item {
+		flex: 1;
+		text-align: center;
+		color: #333;
+		background-color: #fff;
+		cursor: pointer;
+		padding: 0 15px;
+
+		&.is-selected {
+			background-color: #333;
+			color: #fff;
+		}
+	}
+}

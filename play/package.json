@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "play",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@kaola-ui/button": "^0.0.0",
+    "@kaola-ui/icon": "^0.0.0",
+    "@kaola-ui/input-item": "^0.0.0",
+    "@kaola-ui/item": "^0.0.0",
+    "@kaola-ui/list": "^0.0.0",
+    "@kaola-ui/segmented-control": "^0.0.0",
+    "@kaola-ui/steps": "^0.0.0",
+    "@kaola-ui/theme": "^0.0.0"
+  }
+}
