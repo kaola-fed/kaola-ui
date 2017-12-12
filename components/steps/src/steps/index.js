@@ -40,10 +40,10 @@ export default {
 				if ( isFloat( current ) ) {
 					// 向下取整，找到过渡状态持有的节点
 					const index = parseInt( current )
-					const transitionStatusHolder = steps[ index ]
+					const holder = steps[ index ]
 
-					if ( transitionStatusHolder ) {
-						transitionStatusHolder.data.isTransitionHolder = true
+					if ( holder ) {
+						holder.data.isTransitionHolder = true
 					}
 				}
 			} )
