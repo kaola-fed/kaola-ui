@@ -41,7 +41,7 @@ export default {
 			'is-disabled': disabled,
 		} )
 
-		// if type equals `primary`, and primaryColor is provided,use style to override
+		// if type equals `primary`, and primaryColor is provided, use style to override
 		if ( type === 'primary' && primaryColor ) {
 			const key = `${ outline }_${ disabled }`
 			let _style = {}
