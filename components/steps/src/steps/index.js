@@ -5,6 +5,10 @@ export default {
 	components: {
 		StepCircle,
 	},
+	props: {
+		current: Number,
+		status: String,
+	},
 	template,
 	config() {
 		const current = this.data.current || 0

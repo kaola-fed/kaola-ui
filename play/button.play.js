@@ -8,26 +8,26 @@ play( Button, module )
 			<div>
 				<h3>形状</h3>
 				<div>
-					<Button>操作按钮</Button>
-					<Button square>操作按钮</Button>
+					<Button>normal</Button>
+					<Button square>square</Button>
 				</div>
 			</div>
 			<div>
 				<h3>类型</h3>
 				<div>
-					<Button>操作按钮</Button>
-					<Button type="primary">操作按钮</Button>
-					<Button type="primary" outline>操作按钮</Button>
+					<Button primaryColor="blue">normal</Button>
+					<Button type="primary" primaryColor="blue">primary</Button>
+					<Button type="primary" outline primaryColor="blue">primary outline</Button>
 				</div>
 			</div>
 			<div>
 				<h3>尺寸</h3>
 				<div>
-					<Button type="primary" size="xl">操作按钮</Button>
-					<Button type="primary" size="lg">操作按钮</Button>
-					<Button type="primary" size="md">操作按钮</Button>
-					<Button type="primary" size="sm">操作按钮</Button>
-					<Button type="primary" size="xs">操作按钮</Button>
+					<Button size="xl">xl</Button>
+					<Button size="lg">lg</Button>
+					<Button size="md">md</Button>
+					<Button size="sm">sm</Button>
+					<Button size="xs">xs</Button>
 				</div>
 			</div>
 
@@ -44,6 +44,15 @@ play( Button, module )
 					<br />
 					<Button type="primary" size="xs" inline>操作按钮</Button>
 					<br />
+				</div>
+			</div>
+
+			<div>
+				<h3>禁用</h3>
+				<div>
+					<Button disabled>normal</Button>
+					<Button type="primary" disabled>primary</Button>
+					<Button type="primary" outline disabled>primary outline</Button>
 				</div>
 			</div>
 		`,

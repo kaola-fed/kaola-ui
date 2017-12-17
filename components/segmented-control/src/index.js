@@ -1,6 +1,10 @@
 import template from './index.html'
 
 export default {
+	props: {
+		values: Array,
+		selectedIndex: Number
+	},
 	template: template,
 	config() {
 		this.data.values = this.data.values || []
