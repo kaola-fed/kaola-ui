@@ -3,7 +3,8 @@
   "packages": [
     "components/*",
     "theme/*",
-    "play"
+    "play",
+    "docs"
   ],
   "version": "independent",
   "npmClient": "cnpm"

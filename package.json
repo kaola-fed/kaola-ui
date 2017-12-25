@@ -6,10 +6,11 @@
     "precommit": "lint-staged",
     "boot": "lerna bootstrap --hoist",
     "clean": "lerna clean",
-    "play": "play"
+    "play": "play",
+    "docs:dev": "cd docs && poi"
   },
   "lint-staged": {
-    "packages/**/*.js": "eslint --quiet"
+    "components/**/*.js": "eslint --quiet"
   },
   "devDependencies": {
     "eslint": "^3.8.1",
